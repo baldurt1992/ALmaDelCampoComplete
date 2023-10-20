@@ -1,0 +1,217 @@
+body {
+    margin: 1%;
+    font-family: 'Gill Sans', ' Gill Sans MT', Calibri, ' Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    padding: 2px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
+.contenedortotal {
+    position: relative;
+    display: grid;
+}
+
+#header {
+    position: static;
+    width: 40%;
+    height: 40.9vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+#imagestore {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #5e452f;
+    z-index: -1;
+}
+
+.logoalma {
+    display: block;
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-right: auto;
+}
+
+.logoalma img {
+    width: 100%;
+    height: auto;
+    display: block;
+    width: 32vw;
+    top: 90%;
+}
+
+.navbar {
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+    width: 40%;
+    background-color: #5e452f;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0 29px;
+    justify-content: center;
+    color: #5e452f;
+}
+
+.navbar-brand {
+    color: antiquewhite;
+    justify-content: center;
+    font-size: 1.3vw;
+}
+
+.navbar-nav .nav-link:hover {
+    color: antiquewhite;
+    font-size: 3vh;
+    text-align: center;
+}
+
+.nav-item {
+    font-size: 1.29vw;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #5e452f;
+    font-size: 1.3vw;
+}
+
+.nav-link {
+    color: antiquewhite;
+}
+
+.line-menu {
+    background-image: linear-gradient(to right, antiquewhite, #5e452f);
+    height: 1px;
+    position: relative;
+    z-index: 2;
+    width: 36vw;
+}
+
+.form-control {
+    resize: none;
+    color: #5e452f;
+    border-color: #5e452f;
+}
+
+.mensaje {
+    height: 80px;
+}
+
+.contacto {
+    text-align: center;
+
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 11%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-bottom: 200px;
+    color: #5e452f;
+    font-size: 23px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #5e452f;
+    border: #5e452f;
+    margin-bottom: 7%;
+}
+
+.btn-primary:hover {
+    background-color: #978262;
+}
+
+#footer {
+    position: absolute;
+    width: 97%;
+    text-align: center;
+    background-color: #5e452f;
+    color: antiquewhite;
+    padding: 10px 0;
+    font-size: 23px;
+    margin-top: 782px;
+    clear: both;
+    left: 1.5%;
+}
+
+
+
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+    #header {
+        height: 39.4vh !important;
+    }
+
+    .nav-item {
+        display: inline-block;
+        margin: 0 50px;
+        justify-content: center;
+        color: #5e452f;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+    #content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-left: 20%;
+        margin-top: -100px;
+        margin-right: 10%;
+        color: #5e452f;
+        font-size: 23px;
+        line-height: 60px;
+    }
+
+    .btn-primary {
+        background-color: #5e452f;
+        border: #5e452f;
+        margin-bottom: 0;
+    }
+
+    #footer {
+        position: absolute;
+        width: 97%;
+        text-align: center;
+        background-color: #5e452f;
+        color: antiquewhite;
+        padding: 10px 0;
+        font-size: 23px;
+        clear: both;
+        left: 1.5%;
+        bottom: -555px;
+    }
+}

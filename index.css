@@ -1,0 +1,244 @@
+body {
+    margin: 1%;
+    font-family: 'Gill Sans', ' Gill Sans MT', Calibri, ' Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    padding: 2px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
+.contenedortotal {
+    position: relative;
+    display: grid;
+}
+
+#header {
+    position: static;
+    width: 40%;
+    height: 40.9vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #5e452f;
+    z-index: -1;
+}
+
+.logoalma {
+    display: block;
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-right: auto;
+}
+
+.logoalma img {
+    width: 100%;
+    height: auto;
+    display: block;
+    width: 32vw;
+    top: 90%;
+}
+
+.navbar {
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+    width: 40%;
+    background-color: #5e452f;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0 29px;
+    justify-content: center;
+    color: #5e452f;
+}
+
+.navbar-brand {
+    color: antiquewhite;
+    justify-content: center;
+    font-size: 1.3vw;
+}
+
+.navbar-nav .nav-link:hover {
+    color: antiquewhite;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.nav-item {
+    font-size: 1.29vw;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #5e452f;
+    font-size: 1.3vw;
+}
+
+.nav-link {
+    color: antiquewhite;
+}
+
+.line-menu {
+    background-image: linear-gradient(to right, antiquewhite, #5e452f);
+    height: 1px;
+    position: absolute;
+    z-index: 2;
+    width: 36vw;
+}
+
+.carousel {
+    position: absolute;
+    right: 0;
+    top: 39.8%;
+    transform: translateY(-50%);
+    width: 60%;
+    height: 40.7vh;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.main-content img {
+    width: 82%;
+    height: auto;
+}
+
+.content {
+    grid-column: 2;
+    justify-self: flex-start;
+    font-size: 2vh;
+    line-height: 4vh;
+    text-align: justify;
+    margin-top: auto;
+    max-width: 91%;
+    font-size: 23px;
+    color: #5e452f;
+    position: relative;
+}
+
+.content img.image-content-costal {
+    position: absolute;
+    bottom: 0;
+    left: 23%;
+    max-width: 78%;
+    transform: scaleX(-1);
+    top: 90%;
+    right: auto;
+}
+
+.content-text2 {
+    grid-column: 1;
+    justify-self: flex-start;
+    font-size: 2vh;
+    line-height: 4vh;
+    text-align: justify;
+    max-width: 91%;
+    font-size: 23px;
+    color: #5e452f;
+}
+
+#footer {
+    position: relative;
+    margin-top: 12%;
+    width: 100%;
+    text-align: center;
+    background-color: #5e452f;
+    color: antiquewhite;
+    padding: 10px 0;
+
+}
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    .carousel {
+        top: 35% !important;
+        height: 60vh !important;
+        width: 60% !important;
+    }
+
+    .content img.image-content-costal {
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 3% !important;
+        max-width: 78% !important;
+        transform: scaleX(-1) !important;
+        top: 90% !important;
+        right: auto !important;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+    .carousel {
+        top: 23.6% !important;
+        height: 22.3vh !important;
+        width: 60% !important;
+    }
+
+    #header {
+        height: 39.4vh !important;
+    }
+
+    .nav-item {
+        display: inline-block !important;
+        margin: 0 50px !important;
+        justify-content: center !important;
+        color: #5e452f !important;
+    }
+
+    .content img.image-content-costal {
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 30% !important;
+        max-width: 78% !important;
+        transform: scaleX(-1) !important;
+        top: 90% !important;
+        right: auto !important;
+    }
+
+    .content {
+        grid-column: 2;
+        justify-self: flex-start;
+        font-size: 2vh;
+        line-height: 4vh;
+        text-align: justify;
+        margin-top: 0%;
+        max-width: 91%;
+        font-size: 23px;
+        color: #5e452f;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        top: 82% !important;
+        height: 30vh !important;
+        width: 60% !important;
+    }
+
+    #header {
+        height: 12vh;
+    }
+}
